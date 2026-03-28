@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Labs · ENGCE301 Lab Submission Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-container">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <!-- สามารถใส่โลโก้มหาวิทยาลัย หรือใช้ตัวอักษรแทน -->
+            <img class="logorm" src="img/logo.png" alt="rmutl">
+            <span class="logo-text">Team-CPE NO.4</span>
+        </div>
+
+        <nav class="main-nav">
+            <!-- TODO: Student – ตรวจสอบลิงก์ให้ทำงานได้ครบทั้ง 3 หน้า -->
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="my-labs.html" class="nav-link active">My Labs</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="loginpage.html" class="nav-link">Login</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="section section-status">
+            <header class="section-header">
+                <h2>Event table</h2>
+                <p>
+                    <strong>สถานะของกิจกรรมที่ถูกเสนอ/ยื่นเข้ามาสามารถดูได้ตามตารางดังนี้</strong>
+                </p>
+            </header>
+
+            <!-- TODO: Student – ปรับ mock data ให้ตรงกับ LAB จริงของกลุ่ม -->
+            <div class="status-table">
+                <div class="status-row status-header">
+                    <span>number</span>
+                    <span>Name Event</span>
+                    <span>Status</span>
+                    <span>Answer</span>
+                </div>
+
+                <div class="status-row">
+                        <span>Event 1</span>
+                        <span>Esport Day</span>
+                        <span><span class="status-tag status-done">Submitted</span></span>
+                        <span>pass</span>
+                    </div>
+
+                <div class="status-row">
+                        <span>Event 2</span>
+                        <span>Scyber security</span>
+                        <span><span class="status-tag status-done">Submitted</span></span>
+                        <span>pass</span>
+                    </div>
+
+                <div class="status-row todo">
+                        <span>Event 3</span>
+                        <span>Christmas Day</span>
+                        <span><span class="status-tag status-pending">TODO</span></span>
+                        <span>Fail</span>
+                    </div>
+
+                <div class="status-row">
+                    <span>Event 4</span>
+                    <span><!-- TODO: ชื่อ LAB 4 ของกลุ่ม --></span>
+                    <span><span class="status-tag status-late"></span></span>
+                    <span><!-- TODO: คะแนน / หมายเหตุ --></span>
+                </div>
+
+                <div class="status-row">
+                    <span>Event 5</span>
+                    <span><!-- TODO: ชื่อ LAB 5 ของกลุ่ม --></span>
+                    <span><span class="status-tag status-pending"></span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <p class="section-note">
+                <!-- TODO: Student – เชื่อมโยงข้อความนี้กับ Late Submission Policy ใน SRS/Use Case -->
+                Note: เกิดปัญหาตรงไหนหรือสอบถามรายละเอียด สามารถเข้ามาติดต่อที่แผนกเราได้วันและเวลาราชการเท่านั้น!
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
+        <p class="footer-small">
+            My Labs page: extend this mockup into a real status page in future iterations.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

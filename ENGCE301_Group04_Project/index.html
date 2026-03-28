@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ระบบนี้คือศูนย์กลางสำหรับการจัดการวงจรชีวิตของกิจกรรมทั้งหมด ตั้งแต่การเสนอจัดงานไปจนถึงการบันทึกการเข้าร่วมอย่างเป็นทางการ ออกแบบมาเพื่อเพิ่มความโปร่งใส ลดขั้นตอนที่ซ้ำซ้อน และมอบประสบการณ์ที่ราบรื่นสำหรับทั้งผู้จัดงานและผู้ดูแล">
+    <meta name="keywords" content="🚀 ระบบบริหารจัดการกิจกรรมอัจฉริยะ">
+    <meta name="author" content="Group 4 - ENGCE301">
+    <title>Event Access System - ENGCE301 Term Project</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts (ถ้าใช้) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =========================== HEADER =========================== -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Event Access System</h1>
+                <!-- หรือใช้รูปภาพ: <img src="assets/images/logo.png" alt="Logo"> -->
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================== MAIN CONTENT =========================== -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2 class="hero-title">
+                    ระบบนี้คือศูนย์กลางสำหรับการจัดการวงจรชีวิตของกิจกรรมทั้งหมด ตั้งแต่การเสนอจัดงานไปจนถึงการบันทึกการเข้าร่วมอย่างเป็นทางการลดขั้นตอนที่ซ้ำซ้อน
+                </h2>
+                <p class="hero-description">
+                    1.สามารถจัดกิจกรรมขึ้นเองตามความชอบของนักศึกษา
+                    2.สามารถเช็คอินการเข้าร่วมกิจกรรมเพื่อนเป็นหลักฐานได้
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Statement Section -->
+        <section id="problem" class="problem-section">
+            <div class="container">
+                <h2>The Problem We're Solving</h2>
+                <p>
+                    ผู้จัดกิจกรรมต้องทำเรื่องเอกสารไปยื่นแต่ละที่ทำให้ยุ่งยาก
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <p class="section-description">
+                    จัดกิจกรรม – ส่งคำร้องขอจัดกิจกรรมภายในแผนก
+                    เช็คชื่อเข้าร่วม – เช็คชื่อเข้าร่วมกิจกรรมเพื่อเก็บชั่วโมงกิจกรรม 
+                    เช็คอินกิจกรรม – เพื่อยืนยันการเข้าร่วมกิจกรรม ไว้เป็นหลักฐาน 
+                </p>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <!-- ใส่ไอคอนหรือรูปภาพ -->
+                            <span>🎯</span>
+                        </div>
+                        <h3>ยื่นเสนอขอจัดกิจกรรมอัจฉริยะ (Intelligent Activity Proposal Submission) 💡</h3>
+                        <p>ผู้ใช้ที่ลงทะเบียนสามารถ ยื่นเสนอจัดกิจกรรมได้หลายรายการ โดยระบบจะ ตรวจสอบความทับซ้อน ของวันเวลาและสถานที่โดยอัตโนมัติ</p>
+                    </article>
+
+                    <!-- Feature Card 2 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <span>📊</span>
+                        </div>
+                        <h3>การเช็คอินกิจกรรมด้วยหลักฐานภาพถ่าย (QR Check-in & Photo Proof) 📸</h3>
+                        <p>ผู้เข้าร่วมสามารถ เช็คอิน ได้ทันทีด้วยการสแกน QR-code และต้อง ถ่ายรูปภายในงานแนบระบบ เป็นหลักฐานยืนยันการเข้าร่วม</p>
+                    </article>
+
+                    <!-- Feature Card 3 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <span>📧</span>
+                        </div>
+                        <h3>การแจ้งเตือนอัตโนมัติ (Automated Email Notifications) 📧</h3>
+                        <p>แจ้งผู้ดูแล: ระบบจะส่ง อีเมลยืนยัน ทันทีที่คำร้องถูกยื่นมา เพื่อกระตุ้นให้รีบตรวจสอบ
+                            แจ้งผู้จัด: ระบบจะส่ง อีเมลยืนยันผล การอนุมัติ (อนุมัติ/ปฏิเสธ) ไปยังผู้เสนอเมื่อการดำเนินการเสร็จสิ้น
+                        </p>
+                    </article>
+
+                    <!-- เพิ่ม feature cards ตามความเหมาะสม (แนะนำ 4-6 อัน) -->
+
+                     <!-- Feature Card 4 -->
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <span>🚪</span>
+                        </div>
+                        <h3> สามารถดูชั่วโมงในการเข้าร่วมกิจกรรมของเราที่เตยเข้าร่วมได้ (Participation Hours) ⏰</h3>
+                        <p> สามารถดูประวัติการเข้าร่วมกิจกรรมและชั่วโมงเข้าร่วมเพื่อสะสมให้ครบกำหนดก่อนสำเร็จการศึกษา</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-section">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <article class="step">
+                        <span class="step-number">1</span>
+                        <h3>การลงทะเบียนผู้ใช้ (User Registration) 🆕</h3>
+                        <p>ผู้ใช้สามารถสร้างบัญชีส่วนตัวได้อย่างรวดเร็ว โดยระบบจะบังคับใช้มาตรการความปลอดภัยของรหัสผ่านอย่างเข้มงวด (ความยาวอย่างน้อย 8 ตัวอักษร ต้องมีตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก, และตัวเลข) เพื่อป้องกันการเข้าถึงที่ไม่ได้รับอนุญาต</p>
+                    </article>
+                    
+                    <article class="step">
+                        <span class="step-number">2</span>
+                        <h3>การสำรวจและดูรายละเอียดข้อมูล (Explore & View Details) 🔍</h3>
+                        <p>ผู้ใช้สามารถ สอบถามรายการที่สนใจ (ยื่นข้อเสนอ/เช็คอิน) และเมื่อเลือกกิจกรรม ระบบจะแสดง รายละเอียดครบถ้วน ทันที (เช่น รูปภาพ, คำอธิบาย, ข้อมูลจำเพาะ, และรีวิวจากผู้เข้าร่วม)</p>
+                    </article>
+                    
+                    <article class="step">
+                        <span class="step-number">3</span>
+                        <h3>ยื่นเสนอขอจัดกิจกรรมอัจฉริยะ (Intelligent Activity Proposal Submission) 💡</h3>
+                        <p>ผู้ใช้ที่ลงทะเบียนสามารถ ยื่นเสนอจัดกิจกรรมได้หลายรายการ โดยระบบจะ ตรวจสอบความทับซ้อน ของวันเวลาและสถานที่โดยอัตโนมัติ</p>
+                    </article>
+
+                    <article class="step">
+                        <span class="step-number">3</span>
+                        <h3>การเช็คอินกิจกรรมด้วยหลักฐานภาพถ่าย (QR Check-in & Photo Proof) 📸</h3>
+                        <p>ผู้เข้าร่วมสามารถ เช็คอิน ได้ทันทีด้วยการสแกน QR-code และต้อง ถ่ายรูปภายในงานแนบระบบ เป็นหลักฐานยืนยันการเข้าร่วม</p>
+                    </article>
+
+                    <article class="step">
+                        <span class="step-number">3</span>
+                        <h3>การสร้าง/แก้ไขเนื้อหาและการอนุมัติ (Content Creation, Editing & Approval) ✅</h3>
+                        <p>ผู้ดูแลระบบ/คุณครู มีสิทธิ์ในการ ดูและตรวจเช็คอนุมัติ คำร้องขอจัดกิจกรรมใหม่ และสามารถ แก้ไข ข้อมูลของกิจกรรมที่มีอยู่ได้ตลอดเวลา</p>
+                    </article>
+
+                    <article class="step">
+                        <span class="step-number">3</span>
+                        <h3>การแจ้งเตือนอัตโนมัติ (Automated Email Notifications) 📧</h3>
+                        <p>แจ้งผู้ดูแล: ระบบจะส่ง อีเมลยืนยัน ทันทีที่คำร้องถูกยื่นมา เพื่อกระตุ้นให้รีบตรวจสอบ 
+                            แจ้งผู้จัด: ระบบจะส่ง อีเมลยืนยันผล การอนุมัติ (อนุมัติ/ปฏิเสธ) ไปยังผู้เสนอเมื่อการดำเนินการเสร็จ</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About This Project</h2>
+                <p>
+                    💡 แรงบันดาลใจและวัตถุประสงค์ของโปรเจกต์ (Project Inspiration & Purpose)
+
+                    เนื่องจากเราเข้าใจดีว่าหลายครั้ง กิจกรรมที่นักศึกษาสนใจอย่างแท้จริงไม่มีอยู่ในแผนก 🥺 
+                    ทำให้โอกาสในการสร้างประสบการณ์และความรู้ใหม่ ๆ ถูกจำกัดลง โปรเจกต์นี้จึงถือกำเนิดขึ้นด้วยแรงบันดาลใจสำคัญคือการ 
+                    เป็นสะพานเชื่อม ระหว่างความสนใจของนักศึกษาเข้ากับการสร้างกิจกรรมจริง!🗣️
+
+                    สร้างพลังให้นักศึกษา: 🗣️ เราต้องการให้นักศึกษาที่มีความฝันหรือความชอบเฉพาะทาง
+                    ระบบเก็บชั่วโมงที่ทันสมัย: ⏰ ทุกการเข้าร่วมของคุณจะถูกบันทึกอย่างเป็นระบบด้วยฟังก์ชันที่แสนง่ายดาย
+
+                    บันทึกความทรงจำและวัดผลสำเร็จ: 🎓 ไม่เพียงแค่ได้ร่วมสนุก แต่คุณยังสามารถ แนบรูปภาพเป็นหลักฐาน 📸 เพื่อบันทึกความทรงจำอันมีค่า
+
+                    โปรเจกต์นี้จะทำให้การ "เก็บชั่วโมงกิจกรรม" กลายเป็นเรื่องสนุก มีความหมาย และเป็นส่วนหนึ่งของการสร้างเส้นทางสู่อนาคตที่สดใสของคุณ! ✨
+                </p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <article class="team-member">
+                        <img src="assets/image/GH_teamProfile/sor.jfif" alt="Member Name">
+                        <h3>นายสรภูริ์ ทองจันทร์  </h3>
+                        <p class="role">Team Leader </p>
+                        <p class="student-id">67543206078-7 </p>
+                    </article>
+
+                    <!-- Team Member 2 -->
+                    <article class="team-member">
+                        <img src="assets/image/GH_teamProfile/kun.jfif" alt="Member Name">
+                        <h3>นายภูมิรพี กาวันนา </h3>
+                        <p class="role">FullDeveloper</p>
+                        <p class="student-id">67543206018-3 </p>
+                    </article>
+
+                    <!-- Team Member 3 -->
+                    <article class="team-member">
+                        <img src="assets/image/GH_teamProfile/friend.png" alt="Member Name">
+                        <h3>นายเกียรติศักดิ์ อุปพรม  </h3>
+                        <p class="role">Product Owner</p>
+                        <p class="student-id">67543206002-7  </p>
+                    </article>
+
+                    <!-- Team Member 4 -->
+                    <article class="team-member">
+                        <img src="assets/image/GH_teamProfile/phitan.jfif" alt="Member Name">
+                        <h3>นายพิธาน กันปาน  </h3>
+                        <p class="role">Developer </p>
+                        <p class="student-id">67543206067-0 </p>
+                    </article>
+
+                    <!-- Team Member 5 -->
+                    <article class="team-member">
+                        <img src="assets/image/GH_teamProfile/tae.png" alt="Member Name">
+                        <h3>นายเตชธรรม วงศ์ษา </h3>
+                        <p class="role">Designer</p>
+                        <p class="student-id">67543206052-2  </p>
+                    </article>
+
+                    <!-- เพิ่มสมาชิกทุกคนในกลุ่ม -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/CTA Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Interested in Our Project?</h2>
+                <p>[Call-to-Action message]</p>
+                <button class="btn btn-primary">Contact Us</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================== ASIDE (Optional) =========================== -->
+    <aside class="sidebar">
+        <!-- ถ้ามี Sidebar เช่น Latest Updates, Quick Links -->
+    </aside>
+
+    <!-- =========================== FOOTER =========================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Info -->
+                <div class="footer-info">
+                    <h4>Event Access System</h4>
+                    <p>ENGCE301: Software Design and Development</p>
+                    <p>Term Project - Group 4</p>
+                    <p>Rajamangala University of Technology Lanna</p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="https://github.com/[username]/[repo]" target="_blank">GitHub Repository</a></li>
+                        <li><a href="SRS_Draft.md">View SRS Document</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📧 Email: R_romdee@rmutl.ac.th</p>
+                    <p>📱 Tel: 054-325-100</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Event Access System. All rights reserved.</p>
+                <p>Developed with ❤️ by Group 4</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

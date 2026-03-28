@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENGCE301 Lab Submission Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO: Student – ถ้าต้องการใช้ Google Fonts ให้เพิ่ม <link> ที่นี่
+         และไปกำหนดในตัวแปร --font-sans ที่ styles.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Layout Container -->
+    <div class="page-container">
+
+        <!-- ========== HEADER + NAVBAR ========== -->
+        <header class="site-header">
+            <div class="logo">
+                <!-- สามารถใส่โลโก้มหาวิทยาลัย หรือใช้ตัวอักษรแทน -->
+                <img class="logorm" src="img/logo.png" alt="rmutl">
+                <span class="logo-text">Team-CPE NO.4</span>
+            </div>
+
+            <nav class="main-nav">
+                <!-- TODO: Student – ตรวจสอบลิงก์ให้ทำงานได้ครบทั้ง 3 หน้า -->
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="my-labs.html" class="nav-link">My Labs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="loginpage.html" class="nav-link">Login</a>
+            </nav>
+        </header>
+
+        <!-- ========== HERO SECTION ========== -->
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <!-- TODO: Student – ปรับข้อความ Hero ให้สอดคล้องกับ SRS/User Stories ของกลุ่ม
+                         ตัวอย่าง: เน้นเรื่องการส่งงาน, การดูสถานะ, ความยุติธรรมของการให้คะแนน -->
+                    <h1>Event Access System.</h1>
+                    <p class="hero-subtitle">
+                        ระบบนี้คือศูนย์กลางสำหรับการจัดการวงจรชีวิตของกิจกรรมทั้งหมด ตั้งแต่การเสนอจัดงานไปจนถึงการบันทึกการเข้าร่วมอย่างเป็นทางการลดขั้นตอนที่ซ้ำซ้อน.🚀
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#upcoming-labs" class="btn primary">
+                            ยื่น/เสนอกิจกรรม
+                        </a>
+                        <a href="#my-status" class="btn secondary">
+                            เช็คอินกิจกรรม
+                        </a>
+                        <a href="#upcoming-labs" class="btn primary">
+                            ประวัติการเข้าร่วมกิจกรรม
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                        <!-- TODO: Student – แทนค่าด้วยข้อความที่โยงกับ Use Case เช่น UC-01 Submit Lab -->
+                        ผู้ใช้มีข้อสงสัยประการใดสามารถเข้ามาติดต่อแผนกฝ่ายกิจกรรมได้ตามวันเวลาทำการ
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Infographic แบบง่าย ใช้กล่องแทน "Flow" ของ Use Case -->
+                    <div class="hero-flow-card">
+                        <div class="flow-step">SRS</div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-step">User Stories</div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-step">Use Cases</div>
+                        <span class="flow-arrow">→</span>
+                        <div class="flow-step">Web UI</div>
+                    </div>
+                    <p class="hero-visual-caption">
+                        From desire to real activity.❤️
+                    </p>
+                </div>
+            </section>
+
+            <!-- ========== UPCOMING LABS SECTION ========== -->
+            <section id="upcoming-labs" class="section section-labs">
+                <header class="section-header">
+                    <h2>Event Specification</h2>
+                    <p>รายละเอียดกิจกรรมที่กำลังจะถูกจัดขึ้นเร็วๆนี้ !</p>
+                </header>
+
+                <div class="labs-grid">
+                    <!-- ตัวอย่างการ์ด Lab 1 (ทำให้แล้ว) -->
+                    <article class="lab-card">
+                        <div class="lab-meta">
+                            <span class="badge badge-lab">Event 1</span>
+                            <span class="lab-deadline">Due: 02-10-2525</span>
+                        </div>
+                        <h3>Esport Day🎮 </h3>
+                        <p class="lab-desc">
+                            กิจกรรมนี้การแข่งขันเกมและกีฬาสีภายในแผนกที่จะถูกจัดขึ้นภายในวันที่ 10-10-2525 สถานที่และเวลาเป็น
+                            ไปตารางการแข่งขันของกีฬาแต่ละชนิด !
+                        </p>
+                        <ul class="lab-tags">
+                            <li>#UserStory</li>
+                            <li>#UseCase</li>
+                            <li>#SRS</li>
+                        </ul>
+                    </article>
+
+                    <!-- TODO: Student – เพิ่ม Lab Card อย่างน้อย 2 ใบ ให้ตรงกับ Backlog ของกลุ่ม
+                         ตัวอย่าง: LAB 4 – HTML Form for Submit Lab, LAB 5 – Authentication, etc. -->
+                    <article class="lab-card todo">
+                        <div class="lab-meta">
+                            <span class="badge badge-lab">Event 2</span>
+                            <span class="lab-deadline">Due: 15-10-2525</span>
+                        </div>
+                        <h3>Scyber security</h3>
+                        <p class="lab-desc">
+                            กิจกรรมนี้เป็นการอบรมเพื่อเพิ่มความรู้ให้นักศึกษาเกี่ยวกับความปลอดภัยบนโลกออนไลน์ในวันที่20-10-2525
+                            ณ ห้องประชุมชั้น 2 ห้องสมุด เวลาตั้งแต่ 8:00 น. เป็นต้นไป
+                        </p>
+                        <ul class="lab-tags">
+                            <li>#UserStory</li>
+                            <li>#UseCase</li>
+                            <li>#SRS</li>
+                        </ul>
+                    </article>
+
+                    <article class="lab-card todo">
+                        <!-- TODO: Student – Lab Card เพิ่มเติม -->
+                    </article>
+                </div>
+            </section>
+
+            <!-- ========== MY STATUS SECTION ========== -->
+            <section id="my-status" class="section section-status">
+                <header class="section-header">
+                    <h2>Event Table</h2>
+                    <p>
+                        สถานะของกิจกรรมที่ถูกเสนอ/ยื่นเข้ามาสามารถดูได้ตามตารางดังนี้</strong>.
+                        
+                    </p>
+                </header>
+
+                <div class="status-table">
+                    <div class="status-row status-header">
+                        <span>number</span>
+                        <span>Name Event</span>
+                        <span>Status</span>
+                        <span>Answer</span>
+                    </div>
+
+                    <!-- แถวตัวอย่าง 1 -->
+                    <div class="status-row">
+                        <span>Event 1</span>
+                        <span>Esport Day</span>
+                        <span><span class="status-tag status-done">Submitted</span></span>
+                        <span>pass</span>
+                    </div>
+
+                    <!-- แถวตัวอย่าง 2 -->
+                    <div class="status-row">
+                        <span>Event 2</span>
+                        <span>Scyber security</span>
+                        <span><span class="status-tag status-done">Submitted</span></span>
+                        <span>pass</span>
+                    </div>
+
+                    <!-- TODO: Student – เพิ่มแถว mock data สำหรับ LAB 3-5
+                         และใช้ class status-pending / status-late ตามเงื่อนไขที่กลุ่มกำหนด -->
+                    <div class="status-row todo">
+                        <span>Event 3</span>
+                        <span>Christmas Day</span>
+                        <span><span class="status-tag status-pending">TODO</span></span>
+                        <span>Fail</span>
+                    </div>
+                </div>
+
+                <p class="section-note">
+                    <!-- TODO: Student – เขียนข้อความอธิบายเชื่อมกับ Late Submission Policy จาก SRS -->
+                    Note: เกิดปัญหาตรงไหนหรือสอบถามรายละเอียด สามารถเข้ามาติดต่อที่แผนกเราได้วันและเวลาราชการเท่านั้น!
+                </p>
+            </section>
+
+        </main>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="site-footer">
+            <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
+            <p class="footer-small">
+                This UI is derived from SRS, User Stories, and Use Cases created in LAB 3.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

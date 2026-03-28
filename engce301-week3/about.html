@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About · ENGCE301 Lab Submission Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-container">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <!-- สามารถใส่โลโก้มหาวิทยาลัย หรือใช้ตัวอักษรแทน -->
+            <img class="logorm" src="img/logo.png" alt="rmutl">
+            <span class="logo-text">Team-CPE NO.4</span>
+        </div>
+
+        <nav class="main-nav">
+            <!-- TODO: Student – ตรวจสอบลิงก์ให้ทำงานได้ครบทั้ง 3 หน้า -->
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="my-labs.html" class="nav-link">My Labs</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="loginpage.html" class="nav-link">Login</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="section">
+            <header class="section-header">
+                <h2>Event Specification</h2>
+                <p>
+                    รายละเอียดกิจกรรมที่กำลังจะถูกจัดขึ้นเร็วๆนี้ !
+                </p>
+            </header>
+
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>ชื่อกิจกรรมที่กำลังจะถูกจัดขึ้น</h3>
+                    <p>
+                        <!-- TODO: Student – เขียนคำอธิบายสั้น ๆ ของระบบตาม SRS ของกลุ่ม -->
+                        ระบบนี้คือศูนย์กลางสำหรับการจัดการวงจรชีวิตของกิจกรรมทั้งหมด ตั้งแต่การเสนอจัดงานไปจนถึงการบันทึกการเข้าร่วมอย่างเป็นทางการลดขั้นตอนที่ซ้ำซ้อน
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>From SRS to Screens</h3>
+                    <ul>
+                        <!-- TODO: Student – ปรับให้ตรงกับ SRS จริงของกลุ่ม -->
+                        <li><strong>FR-1 loginpage </strong> → ล็อคอินใส่อีเมลและรหัสผ่านเข้าหน้า index page</li>
+                        <li><strong>FR-2 index </strong> → หน้านี้รวมเก็บฟังชั่นที่ผู้ใช้ต้องการยื่นเสนอดูสถานนะกิจกรรมแบบคราวๆ</li>
+                        <li><strong>FR-3 my-labs  </strong> → หน้านี้ไว้ดูสถานนะกิจกรรมทั้งหมดที่ถูกเสนอยื่นเข้ามา</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <header class="section-header">
+                <h2>Mapping: User Stories → UI Elements</h2>
+                <p>Use this section to explicitly map each user story to parts of the UI.</p>
+            </header>
+
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Example Mapping</h3>
+                    <ul>
+                        <li>
+                            <strong>US-01 – View Event List</strong><br>
+                            <span class="text-muted">
+                                → Implemented as the “Upcoming Labs” cards on the History page.
+                            </span>
+                        </li>
+                        <li>
+                            <strong>US-02 – Create New Event</strong><br>
+                            <span class="text-muted">
+                                → เป็นหน้ากรอกแบบฟอร์มสำหรับผู้ที่จะต้องการยื่น/เสนอกิจกรรม
+                            </span>
+                        </li>
+                        <li>
+                            <strong>US-03 – Event Submission</strong><br>
+                            <span class="text-muted">
+                                → Represented by the “My Event Status” section and extended in my-labs.html.
+                            </span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h3>TODO: Your Group Mapping</h3>
+                    <p>
+                        <!-- TODO: Student – ให้กลุ่มของคุณกรอก mapping จริงของกลุ่มที่ใช้ใน Term Project -->
+                        Replace this text with your own mapping between:</p>
+                        <strong> US-01 + US-02 + UC-04 → Section “Upcoming Event” และสถานะ Event บน `index.html`</strong></p>
+                        <strong> US-03 + US-06 → หน้าเว็ปหลังจากกด ปุ่ม Access Event เพื่อเสนอยื่นกิจกรรมที่ตนเองอยากให้จัดขึ้น</strong>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
+        <p class="footer-small">
+            About page: explain how requirements are transformed into UI.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
